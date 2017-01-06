@@ -4,11 +4,11 @@ public void setup()
     noLoop();
     for (int i=0; i<100; i++)
     {
-		String digits = e.substring(i,i+10);
-		double dNum = Double.parseDouble(digits);
-		//if (isPrime)
+		double dNum = Double.parseDouble(e.substring(i,i+10));
+		if (isPrime(dNum)==true)
 		{
 			System.out.println(dNum);
+			break;
     	}
     }
 }  
